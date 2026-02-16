@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -256,6 +257,57 @@ button .fas {
 .success-message {
   background-color: #e8f4fc;
   color: #003c71;
+}
+
+.celebration-message {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #333;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 20px;
+  border: 3px solid #ffa500;
+  border-radius: 12px;
+  text-align: center;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Team name lists */
+.team-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+  font-size: 15px;
+  color: #475569;
+}
+
+.team-list li {
+  padding: 4px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+}
+
+.team-list li:last-child {
+  border-bottom: none;
+}
+
+.team-label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  display: none;
 }
 
 /* Counter */
